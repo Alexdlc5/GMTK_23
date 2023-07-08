@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class Bird_Detector : MonoBehaviour
 {
+    public Plane plane;
+    public Animator lighting;
     public AudioSource alarm;
     public float timer = 0;
     public bool playing = false;
+
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (!playing && collision.gameObject.tag == "Debris")
+        if (!playing && !plane.is_pilot && collision.gameObject.tag == "Debris")
         {
-            //maybe change to visual alarm
+            lighting.SetBool("Alarm", true);
             alarm.Play();
             playing = true;
         }
@@ -20,7 +23,7 @@ public class Bird_Detector : MonoBehaviour
     {
         //                          ||
         //    change whole num only \/       
-        float num_of_beeps = .361f * 5;
+        float num_of_beeps = .361f * 3;
         if (playing && timer < num_of_beeps)
         {
             timer += Time.deltaTime;
@@ -28,8 +31,14 @@ public class Bird_Detector : MonoBehaviour
         else if (playing && timer >= num_of_beeps)
         {
             timer = 0;
+            lighting.SetBool("Alarm", false);
             alarm.Stop();
             playing = false;
+        }
+        if (plane.is_pilot)
+        {
+            alarm.Stop();
+            lighting.SetBool("Alarm", false);
         }
     }
 }

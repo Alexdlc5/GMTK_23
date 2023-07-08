@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Debris
   - Wall
+  - Person
+  - Alert
+  - Crew
   layers:
   - Default
   - TransparentFX
