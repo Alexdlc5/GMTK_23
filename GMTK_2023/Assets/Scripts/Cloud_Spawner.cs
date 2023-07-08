@@ -16,41 +16,27 @@ public class Cloud_Spawner : MonoBehaviour
     void Update()
     {
         //difficulty scaling
-        if (plane.score >= 5000 && difficulty < 2)
+        if (plane.score >= 2500 && difficulty < 1)
         {
             difficulty += 1;
-            cloud_speed_increase += 2;
+            cloud_speed_increase += 6;
         }
-        else if (plane.score >= 10000 && difficulty < 3)
-        {
-            difficulty += 1;
-            cloud_speed_increase += 2;
-        }
-        else if (plane.score >= 15000 && difficulty < 4)
-        {
-            difficulty += 1;
-            cloud_speed_increase += 2;
-        }
-        else if (plane.score >= 20000 && difficulty < 5)
-        {
-            difficulty += 1;
-        }
-        else if (plane.score >= 25000 && difficulty < 6)
+        else if (plane.score >= 7500 && difficulty < 2)
         {
             difficulty += 1;
             cloud_speed_increase += 1;
         }
-        else if (plane.score >= 30000 && difficulty < 7)
+        else if (plane.score >= 12500 && difficulty < 3)
         {
             difficulty += 1;
             cloud_speed_increase += 1;
         }
-        else if (plane.score >= 35000 && difficulty < 8)
+        else if (plane.score >= 17500 && difficulty < 4)
         {
             difficulty += 1;
             cloud_speed_increase += 1;
         }
-        else if (plane.score >= 40000 && difficulty < 9)
+        else if (plane.score >= 22500 && difficulty < 5)
         {
             difficulty += 1;
             cloud_speed_increase += 1;

@@ -16,51 +16,40 @@ public class Debris_Spawner : MonoBehaviour
     void Update()
     {
         //difficulty scaling
-        if (plane.score >= 5000 && difficulty < 2)
+        if (plane.score >= 0 && difficulty < 1)
         {
             difficulty += 1;
-            boundry -= 15;
-            time_till_debris -= 2f;
-            bird_speed_increase += 2;
+            boundry -= 40;
+            time_till_debris -= 5f;
+            bird_speed_increase += 6;
+            boundry -= 20;
+            time_till_debris -= 3f;
         }
-        else if (plane.score >= 10000 && difficulty < 3)
+        else if (plane.score >= 7500 && difficulty < 2)
         {
             difficulty += 1;
-            boundry -= 15;
-            time_till_debris -= 2f;
-            bird_speed_increase += 2;
-        } 
-        else if (plane.score >= 15000 && difficulty < 4)
-        {
-            difficulty += 1;
-            boundry -= 10;
-            time_till_debris -= 1f;
-            bird_speed_increase += 2;
         }
-        else if (plane.score >= 20000 && difficulty < 5)
-        {
-            difficulty += 1;
-            boundry -= 10;
-            time_till_debris -= 1f;
-        }
-        else if (plane.score >= 25000 && difficulty < 6) 
+        else if (plane.score >= 12500 && difficulty < 3) 
         {
             difficulty += 1;
             boundry -= 10;
             time_till_debris -= 1f;
             bird_speed_increase += 1;
         } 
-        else if (plane.score >= 30000 && difficulty < 7)
+        else if (plane.score >= 17500 && difficulty < 4)
         {
             difficulty += 1;
+            boundry -= 10;
             bird_speed_increase += 1;
+            time_till_debris -= 1f;
         }
-        else if (plane.score >= 35000 && difficulty < 8)
+        else if (plane.score >= 22500 && difficulty < 5)
         {
             difficulty += 1;
+            boundry -= 10;
             bird_speed_increase += 1;
         }
-        else if (plane.score >= 40000 && difficulty < 9)
+        else if (plane.score >= 27500 && difficulty < 6)
         {
             difficulty += 1;
             bird_speed_increase += 1;

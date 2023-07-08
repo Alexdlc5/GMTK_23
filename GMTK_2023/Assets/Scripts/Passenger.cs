@@ -27,6 +27,7 @@ public class Passenger : MonoBehaviour
     {
         if (collision.gameObject.tag == "Crew" && needs_help == true)
         {
+            GetComponent<AudioSource>().Play();
             needs_help = false;
             manager.objective_given = false;
             sprite.color = new Color(1, 1, 1, 0);

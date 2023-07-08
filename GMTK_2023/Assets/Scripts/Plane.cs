@@ -7,6 +7,7 @@ using TMPro;
 
 public class Plane : MonoBehaviour
 {
+    public AudioSource hit;
     public float time = 0;
     public TextMeshProUGUI time_display;
     public TextMeshProUGUI highscore_display;
@@ -52,8 +53,9 @@ public class Plane : MonoBehaviour
             is_pilot = !is_pilot;
         }
         if (is_pilot)
-        { 
-            camera_settings.m_Lens.OrthographicSize = 20;
+        {
+            camera_settings.m_Lens.OrthographicSize = 15;
+            camera_settings.GetComponentInChildren<CinemachineFramingTransposer>().m_TrackedObjectOffset = new Vector3(13.5f,-0.77f,0f);
             camera_settings.Follow = gameObject.transform;
             plane_outside.GetComponent<SpriteRenderer>().sortingOrder = 1;
             plane_inside.GetComponent<SpriteRenderer>().sortingOrder = 0;
@@ -62,8 +64,8 @@ public class Plane : MonoBehaviour
         }
         else
         {
-            camera_settings.m_Lens.OrthographicSize = 4.37f;
-            //camera_settings.Follow = crewmember;
+            camera_settings.m_Lens.OrthographicSize = 7.83f;
+            camera_settings.GetComponentInChildren<CinemachineFramingTransposer>().m_TrackedObjectOffset = new Vector3(2.67f, -0.5f, 0f);
             plane_outside.GetComponent<SpriteRenderer>().sortingOrder = 0;
             plane_inside.GetComponent<SpriteRenderer>().sortingOrder = 1;
             crew.GetComponent<SpriteRenderer>().sortingOrder = 2;
@@ -74,6 +76,7 @@ public class Plane : MonoBehaviour
     {
         if (collision.gameObject.tag == "Debris") 
         {
+            hit.Play();
             plane_health -= 1;
             Destroy(collision.gameObject);
             if (plane_health == 2)
