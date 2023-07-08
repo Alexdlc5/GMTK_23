@@ -7,6 +7,8 @@ using TMPro;
 
 public class Plane : MonoBehaviour
 {
+    public float time = 0;
+    public TextMeshProUGUI time_display;
     public TextMeshProUGUI highscore_display;
     public TextMeshProUGUI score_display;
     public float score = 0;
@@ -22,13 +24,13 @@ public class Plane : MonoBehaviour
     private CinemachineVirtualCamera camera_settings;
     private void Start()
     {
-        highscore_display.text = "Highscore: " + Stats.highscore;
+        highscore_display.text = "Highscore: " + (int)Stats.highscore + " (" + (int)Stats.HStime + "sec)";
         camera_settings = GameObject.FindAnyObjectByType<CinemachineVirtualCamera>();
     }
     // Update is called once per frame
     void Update()
     {
-        score_display.text = "Score: " + score;
+        score_display.text = "Score: " + (int)score;
         if (plane_health <= 0)
         {
             game_over = true;
@@ -36,12 +38,14 @@ public class Plane : MonoBehaviour
             if (Stats.highscore < score)
             {
                 Stats.highscore = score;
+                Stats.HStime = time;
             }
             SceneManager.LoadScene(2);
         }
         else
         {
-            score += 50 * Time.deltaTime;
+            time += Time.deltaTime;
+            time_display.text = "Time: " + (int)time + "sec";
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {

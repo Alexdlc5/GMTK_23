@@ -585,7 +585,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 123, y: 122}
+  m_AnchoredPosition: {x: 82, y: 146}
   m_SizeDelta: {x: 202.78394, y: 50}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1436842851
@@ -1273,7 +1273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -48, y: -57}
+  m_AnchoredPosition: {x: 74, y: -57}
   m_SizeDelta: {x: 208, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1886655700
@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <TITLE>
+  m_text: Cabin Chaos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fc1f5188f6c8dbb4792414c36c15a8b6, type: 2}
   m_sharedMaterial: {fileID: 2475610946750300532, guid: fc1f5188f6c8dbb4792414c36c15a8b6, type: 2}
@@ -1477,7 +1477,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 8.5, y: -142.469}
+  m_AnchoredPosition: {x: -15, y: -142.469}
   m_SizeDelta: {x: 208, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2093396086
@@ -1527,8 +1527,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21.96
-  m_fontSizeBase: 21.96
+  m_fontSize: 17.37
+  m_fontSizeBase: 17.37
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

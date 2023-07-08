@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 52, y: -39}
+  m_AnchoredPosition: {x: 320, y: -31}
   m_SizeDelta: {x: 202.7839, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &390907673
@@ -294,7 +294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -183, y: 45}
+  m_AnchoredPosition: {x: -171, y: 40}
   m_SizeDelta: {x: 202.78394, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &463610989
@@ -633,7 +633,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 239, y: 51}
+  m_AnchoredPosition: {x: 234, y: 30}
   m_SizeDelta: {x: 202.78394, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1184437868
@@ -768,7 +768,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 43, y: -20}
+  m_AnchoredPosition: {x: 43, y: -13.2}
   m_SizeDelta: {x: 202.7839, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1221250367
@@ -795,8 +795,8 @@ MonoBehaviour:
     and S keys
 
 
-    -Playing as crew, your job is to ''serve'' or simply move over
-    to the indicated passengers using the A and D keys.
+    -Playing as crew, your job is to navigate to the indicated passengers
+    using the A and D keys.
 
 
     -Your plane has 3 ''lives'''
@@ -905,7 +905,7 @@ RectTransform:
   m_GameObject: {fileID: 1786437437}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.19614, y: 2.19614, z: 2.19614}
+  m_LocalScale: {x: 1.710837, y: 1.710837, z: 1.710837}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 902941998}
@@ -914,7 +914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 25, y: 26}
+  m_AnchoredPosition: {x: 35, y: 33.279}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1786437439
@@ -1296,8 +1296,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7.69
-  m_fontSizeBase: 7.69
+  m_fontSize: 5.43
+  m_fontSizeBase: 5.43
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

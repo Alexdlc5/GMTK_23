@@ -23,7 +23,7 @@ public class Passenger : MonoBehaviour
             sprite.color = new Color(1, 1, 1, 0);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Crew" && needs_help == true)
         {
